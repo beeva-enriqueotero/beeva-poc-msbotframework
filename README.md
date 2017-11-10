@@ -37,3 +37,4 @@ Proof of Concept with MS Bot Framework &amp; QnA
 ### Advanced
 - Test, edit, retrain and publish the update knowledge base.
 - Change the default message. [See instructions](https://docs.microsoft.com/es-es/bot-framework/azure-bot-service-template-question-answer)
+- Add web chat: `<iframe src='https://webchat.botframework.com/embed/chatbot-gc-qna?s=YOUR_SECRET_HERE'></iframe>`
