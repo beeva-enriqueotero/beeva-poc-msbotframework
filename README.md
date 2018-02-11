@@ -6,8 +6,6 @@ Proof of Concept with MS Bot Framework &amp; QnA
 - Use an existing Azure account. Or set-up a new one.
 - Recommended to [set-up billing alerts](https://docs.microsoft.com/en-us/azure/billing/billing-set-up-alerts)
 
-*Note: our free evaluation expires on 1th December 2017*
-
 ### qnamaker.ai
 - Create new service
 - Train Knowledge Base
