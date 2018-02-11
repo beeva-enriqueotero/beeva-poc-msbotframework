@@ -21,10 +21,9 @@ Proof of Concept with MS Bot Framework &amp; QnA
   - App Service: 0,084€/h = 60€/month
   - Pay-as-you-go
 - Select Question and Answer template
-- Create a Microsoft App ID
-- Connect to the knowledge base
+- Create a Microsoft App ID and connect to the knowledge base or...
+- ... edit `QnAKnowledgebaseId` and `QnASubscriptionKey` in Application settings
 - Test
-- Add slack channel
 
 ### Connect to Slack
 - Follow https://docs.microsoft.com/en-us/bot-framework/channel-connect-slack
