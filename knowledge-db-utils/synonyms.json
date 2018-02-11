@@ -1,0 +1,7 @@
+{"PR": ["permiso distribuido"],
+"SRF": ["sistema de retribución flexible"],
+"solicitar": ["solicito", "pido", "pedir", "aplico", "aplicar"],
+"solicito":["pido", "pedir", "solicitar", "aplicar"],
+"aplico": ["pido", "solicito", "pedir", "solicitar", "aplicar"],
+"hacer": ["hago"]
+}
