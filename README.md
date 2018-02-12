@@ -13,11 +13,11 @@ Proof of Concept with MS Bot Framework &amp; QnA
 - Publish
 - View settings
 
-### Microsoft Bot Framework
-- Create a bot
-- Select name and hosting plan
-  - App Service: 0,084€/h = 60€/month
-  - Pay-as-you-go
+### Microsoft Azure Bot Service
+- Create a bot (Web app bot or Functions bot)
+- Select name and [pricing plan](https://azure.microsoft.com/en-us/pricing/details/bot-service/)
+  - For a Functions Bot, the Azure Bot Service will run on Azure Functions in consumption mode.
+  - For a Web App Bot, the Azure Bot Service will run as standard Azure Web App. (45€/month)
 - Select Question and Answer template
 - Create a Microsoft App ID and connect to the knowledge base or...
 - ... edit `QnAKnowledgebaseId` and `QnASubscriptionKey` in Application settings
