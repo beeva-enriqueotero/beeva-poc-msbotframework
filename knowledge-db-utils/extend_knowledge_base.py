@@ -5,16 +5,32 @@ import sys
 import re
 import json
 import io
-F_SYNONYMS = sys.argv[1]
-F_IN = sys.argv[2]
-F_OUT = sys.argv[3]
+
+import argparse
+from collections import OrderedDict
+
+
+parser = argparse.ArgumentParser(description='Extend input file using synonyms from json.')
+parser.add_argument('file_in', help='input file')
+parser.add_argument('file_out', help='output file')
+parser.add_argument('synonyms', help='synonyms file in json format')
+
+args = parser.parse_args()
+print len(vars(args))
+if len(vars(args)) < 3:
+    print parser.print_help()
+    exit(1)
+
+F_SYNONYMS = vars(args)['synonyms']
+F_IN = vars(args)['file_in']
+F_OUT = vars(args)['file_out']
 
 dict_synonyms = json.load(io.open(F_SYNONYMS, encoding='utf-8'))
 
-#dict_synonyms = {'PR':['permiso retribuido'], 'SRF':['sistema de retribución flexible'], 'solicito':['pido', 'pedir']}
 keys = dict_synonyms.keys()
 print keys
 
+# To augment sentences_list with synonyms
 sentences_list = []
 with io.open(F_IN, encoding='utf-8') as f:
    for line in f:
@@ -29,5 +45,9 @@ with io.open(F_IN, encoding='utf-8') as f:
 
               sentences_list.extend(extensions)
 
-       outfile = open(F_OUT, 'w')
+# To remove duplicates
+sentences_list = (OrderedDict.fromkeys(sentences_list))
+
+# To store output
+outfile = open(F_OUT, 'w')
 outfile.write("".join(sentences_list).encode('utf-8'))

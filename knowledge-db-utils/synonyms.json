@@ -1,7 +1,10 @@
 {"PR": ["permiso distribuido"],
 "SRF": ["sistema de retribución flexible"],
-"solicitar": ["solicito", "pido", "pedir", "aplico", "aplicar"],
-"solicito":["pido", "pedir", "solicitar", "aplicar"],
-"aplico": ["pido", "solicito", "pedir", "solicitar", "aplicar"],
+"solicitar": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
+"solicito": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
+"pedir": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
+"pido": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
+"aplicar": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
+"aplico": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
 "hacer": ["hago"]
 }
