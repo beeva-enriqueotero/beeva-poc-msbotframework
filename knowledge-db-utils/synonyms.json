@@ -1,10 +1,10 @@
 {"PR": ["permiso distribuido"],
 "SRF": ["sistema de retribución flexible"],
-"solicitar": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
-"solicito": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
-"pedir": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
-"pido": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
-"aplicar": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
-"aplico": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico"],
+"solicitar": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico", "es el procedimiento de solicitud de"],
+"solicito": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico", "es el procedimiento de solicitud de"],
+"pedir": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico", "es el procedimiento de solicitud de"],
+"pido": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico", "es el procedimiento de solicitud de"],
+"aplicar": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico", "es el procedimiento de solicitud de"],
+"aplico": ["solicitar", "solicito", "pedir", "pido", "aplicar", "aplico", "es el procedimiento de solicitud de"],
 "hacer": ["hago"]
 }
