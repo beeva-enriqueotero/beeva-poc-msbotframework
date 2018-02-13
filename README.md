@@ -14,13 +14,17 @@ Proof of Concept with MS Bot Framework &amp; QnA
 - View settings
 
 ### Microsoft Azure Bot Service
-- Create a bot (Web app bot or Functions bot)
+- Go to portal.azure.com
+- Create a bot (Web app Bot or Functions Bot (\*))
 - Select name and [pricing plan](https://azure.microsoft.com/en-us/pricing/details/bot-service/)
   - For a Functions Bot, the Azure Bot Service will run on Azure Functions in consumption mode.
   - For a Web App Bot, the Azure Bot Service will run as standard Azure Web App. (45€/month)
 - Select Question and Answer template
-- Create a Microsoft App ID and connect to the knowledge base or...
-- ... edit `QnAKnowledgebaseId` and `QnASubscriptionKey` in Application settings
+- In Application Settings, edit `QnAKnowledgebaseId` and `QnASubscriptionKey`
+- In Build, edit, open online code editor
+- In online code editor, edit `BasicQnAMakerDialog.cs`.
+- Set `scoreThreshold` to 0.0 and edit default `No good match in FAQ.` message.
+- Open console, and execute `build.cmd`
 - Test
 
 ### Connect to Slack
@@ -35,3 +39,6 @@ Proof of Concept with MS Bot Framework &amp; QnA
 - Test, edit, retrain and publish the update knowledge base.
 - Change the default message. [See instructions](https://docs.microsoft.com/es-es/bot-framework/azure-bot-service-template-question-answer)
 - Add web chat: `<iframe src='https://webchat.botframework.com/embed/chatbot-gc-qna?s=YOUR_SECRET_HERE'></iframe>`
+
+### Issues
+- Not able to deploy and test a Functions Bot
