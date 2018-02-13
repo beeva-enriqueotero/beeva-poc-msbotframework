@@ -23,7 +23,7 @@ Proof of Concept with MS Bot Framework &amp; QnA
 - In Application Settings, edit `QnAKnowledgebaseId` and `QnASubscriptionKey`
 - In Build, edit, open online code editor
 - In online code editor, edit `BasicQnAMakerDialog.cs`.
-- Set `scoreThreshold` to 0.0 and edit default `No good match in FAQ.` message.
+- Set `scoreThreshold` to 0.0 and [edit default `No good match in FAQ` message.](https://github.com/Microsoft/BotBuilder/issues/3727)
 - Open console, and execute `build.cmd`
 - Test
 
