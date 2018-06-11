@@ -20,7 +20,7 @@ Proof of Concept with MS Bot Framework &amp; QnA
   - For a Functions Bot, the Azure Bot Service will run on Azure Functions in consumption mode.
   - For a Web App Bot, the Azure Bot Service will run as standard Azure Web App. (45€/month)
 - Select Question and Answer template
-- In Application Settings, edit `QnAKnowledgebaseId` and `QnASubscriptionKey`
+- In Application Settings, edit `QnAKnowledgebaseId`, `QnASubscriptionKey` and `QnAEndpointHostName`
 - In Build, edit, open online code editor
 - In online code editor, edit `BasicQnAMakerDialog.cs`.
 - Set `scoreThreshold` to 0.0 and [edit default `No good match in FAQ` message.](https://github.com/Microsoft/BotBuilder/issues/3727)
