@@ -35,13 +35,14 @@ sentences_list = []
 with io.open(F_IN, encoding='utf-8') as f:
    for line in f:
        sentences_list.append(line)
-       words = re.split(r'[^\w]', line)
+       line1 = line.split('\t')
+       words = re.split(r'[^\w]', line1[0])
 
        for key in keys:
           if (key in words):
-              print line
+              #print line
               index = words.index(key)
-              extensions = [line.replace(key, replacement) for replacement in dict_synonyms[key]]
+              extensions = [line1[0].replace(key, replacement)+"\t"+line1[1] for replacement in dict_synonyms[key]]
 
               sentences_list.extend(extensions)
 
